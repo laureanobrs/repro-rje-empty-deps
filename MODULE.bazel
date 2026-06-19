@@ -1,0 +1,26 @@
+module(name = "rje_repro")
+
+bazel_dep(name = "rules_java", version = "8.15.2")
+bazel_dep(name = "rules_jvm_external", version = "6.10")
+
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+
+maven.install(
+    name = "maven",
+    artifacts = [
+        "com.adobe.testing:s3mock-junit4:3.3.0",
+        "com.google.cloud:google-cloud-storage",
+    ],
+    boms = [
+        "com.google.cloud:libraries-bom:26.62.0",
+    ],
+    fail_if_repin_required = True,
+    lock_file = "//:maven_install.json",
+    repositories = [
+        "https://repo1.maven.org/maven2",
+    ],
+    resolver = "maven",
+    strict_visibility = True,
+)
+
+use_repo(maven, "maven")
