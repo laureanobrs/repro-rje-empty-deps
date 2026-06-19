@@ -6,7 +6,7 @@ java_binary(
     name = "check_jackson_annotations",
     srcs = ["CheckJacksonAnnotations.java"],
     main_class = "CheckJacksonAnnotations",
-    runtime_deps = [
+    deps = [
         "@maven//:com_adobe_testing_s3mock_junit4",
     ],
 )
