@@ -9,8 +9,16 @@ INFO: Found 1 target...
 Target //:check_jackson_annotations up-to-date:
   bazel-bin/check_jackson_annotations
   bazel-bin/check_jackson_annotations.jar
-INFO: Elapsed time: 0.222s, Critical Path: 0.00s
+INFO: Elapsed time: 0.247s, Critical Path: 0.00s
 INFO: 1 process: 1 internal.
 INFO: Build completed successfully, 1 total action
 INFO: Running command line: bazel-bin/check_jackson_annotations
-JsonInclude$Include is on the runtime classpath
+Exception in thread "main" java.lang.ClassNotFoundException: com.fasterxml.jackson.annotation.JsonInclude$Include
+  at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+  at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+  at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+  at java.base/java.lang.Class.forName0(Native Method)
+  at java.base/java.lang.Class.forName(Class.java:423)
+  at java.base/java.lang.Class.forName(Class.java:414)
+  at CheckJacksonAnnotations.main(CheckJacksonAnnotations.java:3)
+

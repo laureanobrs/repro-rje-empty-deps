@@ -3,18 +3,18 @@ Step 3
 bazel query --output=build @maven//:com_fasterxml_jackson_dataformat_jackson_dataformat_xml
 ---------------------------------------------------------------------------------------------------------------------
 
-# /home/user/.cache/bazel/_bazel_user/6ea1d42389e2e1b7703d5a479c2d8248/external/rules_jvm_external~~maven~maven/BUILD:518:11
+# /home/user/.cache/bazel/_bazel_user/6ea1d42389e2e1b7703d5a479c2d8248/external/rules_jvm_external~~maven~maven/BUILD:516:11
 jvm_import(
   name = "com_fasterxml_jackson_dataformat_jackson_dataformat_xml",
   visibility = ["//visibility:private"],
-  tags = ["maven_coordinates=com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.3", "maven_repository=https://repo1.maven.org/maven2", "maven_sha256=39a34531dca5fca75eb547663c300855c968c8faca6861d92eca9e9747af0416", "maven_url=https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.15.3/jackson-dataformat-xml-2.15.3.jar"],
+  tags = ["maven_coordinates=com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.18.3", "maven_repository=https://repo1.maven.org/maven2", "maven_sha256=0181c2e9f3d3ce8e03fd1ce240d202d129b2e53a3fed1aed2b69be4f29b1fb51", "maven_url=https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.18.3/jackson-dataformat-xml-2.18.3.jar"],
   applicable_licenses = ["@maven//:com_fasterxml_jackson_dataformat_jackson_dataformat_xml_package_metadata"],
-  jar = "@maven//:com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.15.3/jackson-dataformat-xml-2.15.3.jar",
-  deps = ["@maven//:com_fasterxml_jackson_core_jackson_annotations", "@maven//:com_fasterxml_jackson_core_jackson_core", "@maven//:com_fasterxml_jackson_core_jackson_databind", "@maven//:com_fasterxml_woodstox_woodstox_core", "@maven//:org_codehaus_woodstox_stax2_api"],
-  maven_coordinates = "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.3",
-  maven_url = "https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.15.3/jackson-dataformat-xml-2.15.3.jar",
+  jar = "@maven//:com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.18.3/jackson-dataformat-xml-2.18.3.jar",
+  deps = [],
+  maven_coordinates = "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.18.3",
+  maven_url = "https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.18.3/jackson-dataformat-xml-2.18.3.jar",
 )
 # Rule com_fasterxml_jackson_dataformat_jackson_dataformat_xml instantiated at (most recent call last):
-#   /home/user/.cache/bazel/_bazel_user/6ea1d42389e2e1b7703d5a479c2d8248/external/rules_jvm_external~~maven~maven/BUILD:518:11 in <toplevel>
+#   /home/user/.cache/bazel/_bazel_user/6ea1d42389e2e1b7703d5a479c2d8248/external/rules_jvm_external~~maven~maven/BUILD:516:11 in <toplevel>
 # Rule jvm_import defined at (most recent call last):
 #   /home/user/.cache/bazel/_bazel_user/6ea1d42389e2e1b7703d5a479c2d8248/external/rules_jvm_external~/private/rules/jvm_import.bzl:103:18 in <toplevel>
